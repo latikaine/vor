@@ -50,7 +50,7 @@ d3.json("vr_history-master/data2.json", function(data) {
     div.append('div')
       .attr("class", "content")
       .html(function(d) {
-        return "<div class=\"img-holder\" style=\"background-image: url(" + d.img + ")\">&nbsp;</div><h1>" + d.name + "</h1>" + "<small>(" + d.start_year + ")</small>" + "<p class=\"desc\">" +  d.description + "</p>" + "<div class=\"links\"><small>Links:</small><br />" + d.links + "</div><div class=\"sources\"><small>Sources:</small><br />" + d.sources + "</div>";
+        return "<a href=\"#\" class=\"closeicon\"><img src=\"img\/close.svg\"></a><div class=\"img-holder\" style=\"background-image: url(" + d.img + ")\">&nbsp;</div><h1>" + d.name + "</h1>" + "<small>(" + d.start_year + ")</small>" + "<p class=\"desc\">" +  d.description + "</p>" + "<div class=\"links\"><small>Links:</small><br />" + d.links + "</div><div class=\"sources\"><small>Sources:</small><br />" + d.sources + "</div>";
       });
 
   // X-axis - I suppose it's still easiest to do that in svg?
@@ -69,6 +69,8 @@ d3.json("vr_history-master/data2.json", function(data) {
     div.style("left", function(d) { return d.x + 72 + "px"; }); // TODO yeah magic numbers, sue me
     div.style("top", function(d) { return d.y + 100 + "px"; });
   });
+
+
 
 
 });

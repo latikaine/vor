@@ -1,6 +1,11 @@
 $sans: 'Roboto', sans-serif;
 $serif: 'Roboto Slab', serif;
 
+
+body{
+  background: #2e2042;
+}
+
 .header{
   padding: 50px 0;
   background-color: #f2f2f2;
@@ -30,12 +35,13 @@ $serif: 'Roboto Slab', serif;
   .axis path,
   .axis line {
   	fill: none;
-  	stroke: #000;
+  	stroke: #fff;
   	shape-rendering: crispEdges;
   }
 
   .axis text {
   	font: 10px sans-serif;
+    color: #fff;
   }
 
   .cells path {
@@ -48,8 +54,8 @@ $serif: 'Roboto Slab', serif;
   }
 
   text {
-  	fill: black;
-  	stroke: black;
+  	fill: #fff;
+  	stroke: #fff;
   	font: 20px sans-serif;
   }
 
@@ -59,11 +65,21 @@ $serif: 'Roboto Slab', serif;
   	text-align: justify;
     background: #ccc;
 
+    cursor: hand; cursor: pointer;
+
     &[data-type="History"]{ background: #CC1A25 !important; }
     &[data-type="HMD"]{ background-color: #FFDA3E; }
     &[data-type="Movie"]{ background-color: #4C80FF; }
     &[data-type="Literature"]{ background-color: #187BCC; }
 
+    &.collapsed{
+      &:hover{
+        width: 30px;
+        height: 30px;
+        top: -5px;
+        opacity: 0.5;
+      }
+    }
 
   }
 
@@ -106,11 +122,22 @@ $serif: 'Roboto Slab', serif;
   	transition: 500ms;
     padding: 10px;
 
+    .closeicon{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 30px;
+      height: 30px;
+    }
+
     .img-holder{
       width: 100%;
       height: 300px;
-      background: rgba(0,0,0,0.1);
+      background-color: rgba(0,0,0,0.1);
       margin-bottom: 10px;
+      background-size: auto 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
     }
 
     h1{
@@ -150,6 +177,8 @@ $serif: 'Roboto Slab', serif;
     margin: 5px;
     float: left;
 
+      color: #222;
+
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -171,4 +200,12 @@ $serif: 'Roboto Slab', serif;
   margin-top: 50px;
   padding: 50px 0;
   background: #f2f2f2;
+}
+
+
+#footer{
+  background: #E52837;
+  color: #fff;
+  padding: 30px 0 30px 0;
+  font-size: 0.8rem;
 }
