@@ -34,11 +34,21 @@
     <div class="row">
       <div class="large-12 columns">
         <ul id="legends">
-          <li class="filter History" rel="History">History</li>
-          <li class="filter HMD" rel="HMD">HMD</li>
-          <li class="filter Movie" rel="Movie">Movie</li>
-          <li class="filter Literature" rel="Literature">Literature</li>
-          <li class="filter NONE"></li>
+          <li class="filter History">History</li>
+          <li class="filter AR">AR</li>
+          <li class="filter Computing">Computing</li>
+          <li class="filter Console">Console</li>
+          <li class="filter Device">Device</li>
+          <li class="filter HMD">HMD</li>
+          <li class="filter Literature">Literature</li>
+          <li class="filter Movie">Movie</li>
+          <li class="filter Software">Software</li>
+          <li class="filter Videogame">Videogame</li>
+          <li class="filter Virtualworld">Virtualworld</li>
+          <li class="filter Simulator">Simulator</li>
+
+
+
         </ul>
       </div>
     </div>

@@ -8,7 +8,10 @@ body{
 
 .header{
   padding: 50px 0;
-  background-color: #f2f2f2;
+  //background-color: #f2f2f2;
+  background-image: url('../img/bg-top2.jpg');
+  background-position: center center;
+  background-size: 100% auto;
   margin-bottom: 50px;
   .slogan{
     font-size: 1.8rem;
@@ -66,11 +69,24 @@ body{
     background: #ccc;
 
     cursor: hand; cursor: pointer;
-
+/*
     &[data-type="History"]{ background: #CC1A25 !important; }
     &[data-type="HMD"]{ background-color: #FFDA3E; }
     &[data-type="Movie"]{ background-color: #4C80FF; }
     &[data-type="Literature"]{ background-color: #187BCC; }
+*/
+    &[data-type="History"]{ background: #b60903; }
+    &[data-type="AR"]{ background: #42afca; }
+    &[data-type="Computing"]{ background: #2eee3a; }
+    &[data-type="Console"]{ background: #9aacb0; }
+    &[data-type="Device"]{ background: #e8c3e0; }
+    &[data-type="HMD"]{ background: #7b6e03; }
+    &[data-type="Literature"]{ background: #f79108; }
+    &[data-type="Movie"]{ background: #4be7c3; }
+    &[data-type="Software"]{ background: #c829af; }
+    &[data-type="Videogame"]{ background: #dc8566; }
+    &[data-type="Virtualworld"]{ background: #657687; }
+    &[data-type="Simulator"]{ background: #48a21b; }
 
     &.collapsed{
       &:hover{
@@ -183,10 +199,24 @@ body{
     -moz-border-radius: 3px;
     border-radius: 3px;
 
+/*
     &.History{ background: #CC1A25 !important; }
     &.HMD{ background-color: #FFDA3E; }
     &.Movie{ background-color: #4C80FF; }
     &.Literature{ background-color: #187BCC; }
+*/
+    &.History{ background: #b60903; }
+    &.AR{ background: #42afca; }
+    &.Computing{ background: #2eee3a; }
+    &.Console{ background: #9aacb0; }
+    &.Device{ background: #e8c3e0; }
+    &.HMD{ background: #7b6e03; }
+    &.Literature{ background: #f79108; }
+    &.Movie{ background: #4be7c3; }
+    &.Software{ background: #c829af; }
+    &.Videogame{ background: #dc8566; }
+    &.Virtualworld{ background: #657687; }
+    &.Simulator{ background: #48a21b; }
 
     &.toggled{
       opacity: 0.2;

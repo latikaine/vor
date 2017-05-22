@@ -10,11 +10,27 @@ var trackDist = 30;
 
 // pseudo-enum for handling groups
 var groups = {
+/*
   "History": 0,
   "HMD": 1,
   "Movie": 2,
   "Literature": 3,
   "NONE": 4
+*/
+  'History': 0,
+  'AR': 1,
+  'Computing':2,
+  'Console':3,
+  'Device':4,
+  'HMD':5,
+  'Literature':6,
+  'Movie':7,
+  'Software':8,
+  'Videogame':9,
+  'Virtualworld':10,
+  'Simulator':11
+
+
 };
 
 var formatValue = d3.format("d");
